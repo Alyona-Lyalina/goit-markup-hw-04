@@ -126,7 +126,7 @@ h2 {
 /*========Hero styles========*/
 
 .section.hero-section {
-  margin: -1px;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -166,6 +166,7 @@ h2 {
 }
 
 .link {
+  margin: -1px;
   padding: 24px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
