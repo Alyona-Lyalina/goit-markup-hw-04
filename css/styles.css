@@ -166,14 +166,16 @@ h2 {
 }
 
 .link {
-  margin: -1px;
   padding: 24px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
   position: relative;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:first-child .link {
+  color: #404bbf;
 }
 
 .link:hover,
@@ -304,17 +306,16 @@ h2 {
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  display: flex;
-  justify-content: center;
   column-gap: 24px;
-  padding: 24px;
   margin-bottom: 8px;
-  align-items: center;
 }
 
 .icon:hover {
@@ -326,7 +327,7 @@ h2 {
 /*========Section team========*/
 
 .text-title {
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -443,6 +444,9 @@ h2 {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+.card-title {
+  margin-bottom: 8px;
+}
 
 /*========Footer section========*/
 .footer {
@@ -514,7 +518,6 @@ h2 {
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 0.3s ease;
-  transition-property: background-color 0.3s ease;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -531,7 +534,8 @@ h2 {
 .site-nav {
   position: relative;
 }
-.menu-nav a::after {
+
+.menu-nav .nav-item:first-child .link::after {
   content: "";
   position: absolute;
   left: 191px;
